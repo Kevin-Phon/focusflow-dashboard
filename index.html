@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusFlow - A minimalist study dashboard designed for productivity and focus.">
+    <title>FocusFlow | Productivity Dashboard</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Focus<span>Flow</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <div class="dashboard-grid">
+            <!-- Timer Section -->
+            <section class="card timer-card" aria-labelledby="timer-heading">
+                <h2 id="timer-heading" class="sr-only">Focus Timer</h2>
+                <div class="timer-display">
+                    <span id="timer-minutes">25</span>:<span id="timer-seconds">00</span>
+                </div>
+                <div class="timer-controls">
+                    <button id="timer-start" class="btn btn-primary">Start</button>
+                    <button id="timer-pause" class="btn btn-secondary" disabled>Pause</button>
+                    <button id="timer-reset" class="btn btn-outline">Reset</button>
+                </div>
+                <div class="timer-modes">
+                    <button class="mode-btn active" data-time="25">Focus</button>
+                    <button class="mode-btn" data-time="5">Short Break</button>
+                    <button class="mode-btn" data-time="15">Long Break</button>
+                </div>
+            </section>
+
+            <!-- Tasks Section -->
+            <section class="card tasks-card" aria-labelledby="tasks-heading">
+                <div class="card-header">
+                    <h2 id="tasks-heading">Current Tasks</h2>
+                    <span id="task-count" class="badge">0</span>
+                </div>
+                
+                <form id="task-form" class="task-input-group">
+                    <input type="text" id="task-input" placeholder="What are you working on?" aria-label="New task description" required>
+                    <button type="submit" class="btn btn-primary" aria-label="Add task">+</button>
+                </form>
+
+                <ul id="task-list" class="task-list" aria-live="polite">
+                    <!-- Tasks will be injected here by JavaScript -->
+                    <li class="empty-state">No tasks for now. Add one to get started!</li>
+                </ul>
+            </section>
+
+            <!-- Stats/Quote Section -->
+            <section class="card quote-card" aria-labelledby="quote-heading">
+                <h2 id="quote-heading" class="sr-only">Daily Inspiration</h2>
+                <div id="quote-container">
+                    <p id="quote-text">"The secret of getting ahead is getting started."</p>
+                    <cite id="quote-author">— Mark Twain</cite>
+                </div>
+                <div class="study-tip-box">
+                    <strong>Pro Study Tip:</strong> <span id="study-tip">Try the Pomodoro technique to maintain focus.</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FocusFlow Dashboard. Built with Semantic HTML, CSS, and Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
