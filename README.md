@@ -3,7 +3,7 @@
 FocusFlow is a minimalist, accessible study dashboard designed to help students and professionals maintain deep focus using the Pomodoro technique. This project was built to demonstrate core frontend development skills including semantic HTML, modern CSS, and vanilla JavaScript logic.
 
 ## 🚀 Live Demo
-[Link to your GitHub Pages deployment will go here]
+[https://Kevin-Phon.github.io/focusflow-dashboard/](https://Kevin-Phon.github.io/focusflow-dashboard/)
 
 ## ✨ Features
 - **Customizable Pomodoro Timer**: Switch between Focus, Short Break, and Long Break modes.
