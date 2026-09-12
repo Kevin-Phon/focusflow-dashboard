@@ -20,7 +20,7 @@ FocusFlow is a minimalist, accessible study dashboard designed to help students 
 - **Google Fonts**: Inter font family for high readability.
 
 ## 📸 Screenshots
-*(Add your screenshots here after deployment)*
+*(Screenshots)*
 - Desktop Dashboard View
 - Mobile Responsive View
 - Dark Mode Toggle
@@ -39,11 +39,6 @@ FocusFlow is a minimalist, accessible study dashboard designed to help students 
 - Developed a responsive productivity dashboard using **Vanilla JavaScript**, **HTML5**, and **CSS3**, achieving a 100% score in basic accessibility audits.
 - Implemented data persistence using **Web Storage API (localStorage)**, allowing users to maintain task lists across browser sessions.
 - Designed a mobile-first UI with **CSS Grid and Flexbox**, ensuring a seamless experience across all device sizes.
-
-### Interview Talking Points
-- **Why Vanilla JS?**: "I chose to build this without frameworks to demonstrate my fundamental understanding of the DOM and JavaScript execution context. It shows I can solve problems without relying on external libraries."
-- **Accessibility**: "I focused heavily on accessibility by using semantic tags like `<main>`, `<section>`, and `<nav>`, and ensuring all interactive elements are keyboard-accessible. This is crucial for creating inclusive software."
-- **State Management**: "I managed the application state (timer status, task list) using a central JavaScript object, which helped keep the logic organized and easier to debug."
 
 ---
 *Created by Kevin Phon as part of a technical portfolio for the Web Development Intern position at Cal Poly Pomona.*
