@@ -32,6 +32,6 @@ Clone this repository and open `index.html` in a browser. There are no packages 
 
 This is a learning project in my portfolio as a Computer Science student at Cal Poly Pomona. AI tools helped with the code and documentation. I am continuing to build my understanding of the project and revise it as I learn.
 
-The page includes semantic HTML, labels, and a skip link. This README does not claim a verified accessibility audit score.
+The interface includes labels for the main controls and a skip link to the dashboard.
 
 [My portfolio](https://Kevin-Phon.github.io/portfolio/)
