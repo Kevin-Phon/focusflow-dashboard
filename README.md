@@ -1,44 +1,37 @@
-# FocusFlow | Productivity Dashboard
+# FocusFlow Study Dashboard
 
-FocusFlow is a minimalist, accessible study dashboard designed to help students and professionals maintain deep focus using the Pomodoro technique. This project was built to demonstrate core frontend development skills including semantic HTML, modern CSS, and vanilla JavaScript logic.
+FocusFlow is a small study dashboard with a Pomodoro timer and a task list. I built it with help from AI tools as part of my student portfolio.
 
-## 🚀 Live Demo
-[https://Kevin-Phon.github.io/focusflow-dashboard/](https://Kevin-Phon.github.io/focusflow-dashboard/)
+It uses HTML, CSS, and JavaScript without a frontend framework. The main parts are timer controls, task updates, and saving information in the browser.
 
-## ✨ Features
-- **Customizable Pomodoro Timer**: Switch between Focus, Short Break, and Long Break modes.
-- **Persistent Task Management**: Add, complete, and delete tasks. All data persists using browser `localStorage`.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop views.
-- **Dark Mode Support**: User-selectable theme that persists across sessions.
-- **Accessibility First**: Built with semantic HTML, ARIA labels, and keyboard navigation support.
-- **Smooth Animations**: Subtle CSS transitions for a polished user experience.
+[Open FocusFlow](https://Kevin-Phon.github.io/focusflow-dashboard/)
 
-## 🛠️ Technologies Used
-- **HTML5**: Semantic structure for better SEO and accessibility.
-- **CSS3**: Custom properties (variables), Flexbox, Grid, and Keyframe animations.
-- **Vanilla JavaScript**: DOM manipulation, event handling, and state management (no frameworks used).
-- **Google Fonts**: Inter font family for high readability.
+## What it does
 
-## 📸 Screenshots
-*(Screenshots)*
-- Desktop Dashboard View
-- Mobile Responsive View
-- Dark Mode Toggle
+- Switch between a 25-minute focus session, a 5-minute short break, and a 15-minute long break.
+- Start, pause, and reset the timer.
+- Add tasks, mark them complete, and remove them.
+- Save tasks and the light/dark theme preference using `localStorage`.
+- Show the remaining time in the browser tab title and an alert when a session ends.
 
-## 🔮 Future Improvements
-- **Audio Notifications**: Add subtle sounds when the timer completes.
-- **Statistics View**: Visualize focus time over a week using a simple chart.
-- **Drag-and-Drop**: Allow reordering of tasks for better prioritization.
-- **External API Integration**: Fetch real-time weather or more diverse inspirational quotes.
+## How it works
 
----
+- `index.html` contains the timer, task form, and page structure.
+- `style.css` handles the layout and appearance.
+- `script.js` handles the timer, button events, task list, and saved preferences.
 
-## 📄 For Hiring Managers
+Tasks and the theme preference are stored in the current browser. There is no account or server database, so they do not sync across devices. Refreshing the page resets the timer.
 
-### Resume Bullet Points
-- Developed a responsive productivity dashboard using **Vanilla JavaScript**, **HTML5**, and **CSS3**, achieving a 100% score in basic accessibility audits.
-- Implemented data persistence using **Web Storage API (localStorage)**, allowing users to maintain task lists across browser sessions.
-- Designed a mobile-first UI with **CSS Grid and Flexbox**, ensuring a seamless experience across all device sizes.
+The timer uses `setInterval`, so browser throttling or putting a device to sleep can affect its timing.
 
----
-*Created by Kevin Phon as part of a technical portfolio for the Web Development Intern position at Cal Poly Pomona.*
+## Run it locally
+
+Clone this repository and open `index.html` in a browser. There are no packages to install or build commands to run.
+
+## Project context
+
+This is a learning project in my portfolio as a Computer Science student at Cal Poly Pomona. AI tools helped with the code and documentation. I am continuing to build my understanding of the project and revise it as I learn.
+
+The page includes semantic HTML, labels, and a skip link. This README does not claim a verified accessibility audit score.
+
+[My portfolio](https://Kevin-Phon.github.io/portfolio/)
